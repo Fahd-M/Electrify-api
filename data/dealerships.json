@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a",
+        "name":"Toyota",
+        "address": {
+            "street":"2215 Dundas Street East",
+            "city":"Mississauga",
+            "province":"Ontario",
+            "postalCode":"L4X2X2"
+        },
+        "phone":"1-855-410-8972",
+        "email":"sales@mississauga.toyota.ca"
+    },
+    {
+        "id": "b",
+        "name":"Honda",
+        "address": {
+            "street":"2380 Motorway Blvd",
+            "city":"Mississauga",
+            "province":"Ontario",
+            "postalCode":"L5L1X3"
+        },
+        "phone":"1-888-360-3809",
+        "email":"info@mississaugahonda.com"
+    },
+    {
+        "id": "c",
+        "name":"Nissan",
+        "address": {
+            "street":"5500 Dixie Road, Unit B",
+            "city":"Mississauga",
+            "province":"Ontario",
+            "postalCode":"L4W4N3"
+        },
+        "phone":"1-833-944-0869",
+        "email":"shoponline@dilawri.ca"
+    },
+    {
+        "id": "d",
+        "name":"Mitsubishi",
+        "address": {
+            "street":"5525 Ambler Dr",
+            "city":"Mississauga",
+            "province":"Ontario",
+            "postalCode":"L4W3Z1"
+        },
+        "phone":"1-833-340-1889",
+        "email":"info@dixiemitsubishi.ca"
+    },
+    {
+        "id": "e",
+        "name":"Hyundai",
+        "address": {
+            "street":"3045 Glen Erin Dr",
+            "city":"Mississauga",
+            "province":"Ontario",
+            "postalCode":"L5L1J3"
+        },
+        "phone":"1-888-697-7020",
+        "email":"sales@mississaugahyundai.ca"
+    }
+]
