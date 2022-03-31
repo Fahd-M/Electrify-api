@@ -31,7 +31,8 @@
         "electricWarranty": {
             "components":"96 months or 160000km Hybrid-related",
             "battery":"120 months or 240000km Hybrid"
-        }
+        },
+        "image":"../public/images/toyota-2022-prius.jpg"
 
     },
     {
