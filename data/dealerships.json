@@ -1,7 +1,7 @@
 [
     {
         "id": "a",
-        "name":"Toyota",
+        "make":"Toyota",
         "address": {
             "street":"2215 Dundas Street East",
             "city":"Mississauga",
@@ -9,11 +9,12 @@
             "postalCode":"L4X2X2"
         },
         "phone":"1-855-410-8972",
-        "email":"sales@mississauga.toyota.ca"
+        "email":"sales@mississauga.toyota.ca",
+        "image":"/images/ToyotaMap.JPG"
     },
     {
         "id": "b",
-        "name":"Honda",
+        "make":"Honda",
         "address": {
             "street":"2380 Motorway Blvd",
             "city":"Mississauga",
@@ -25,7 +26,7 @@
     },
     {
         "id": "c",
-        "name":"Nissan",
+        "make":"Nissan",
         "address": {
             "street":"5500 Dixie Road, Unit B",
             "city":"Mississauga",
@@ -37,7 +38,7 @@
     },
     {
         "id": "d",
-        "name":"Mitsubishi",
+        "make":"Mitsubishi",
         "address": {
             "street":"5525 Ambler Dr",
             "city":"Mississauga",
@@ -49,7 +50,7 @@
     },
     {
         "id": "e",
-        "name":"Hyundai",
+        "make":"Hyundai",
         "address": {
             "street":"3045 Glen Erin Dr",
             "city":"Mississauga",

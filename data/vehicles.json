@@ -1,388 +1,385 @@
 [
-    {
-        "id":"1",
-        "dealerId":"a",
-        "make":"Toyota",
-        "model":"Prius",
-        "trim":"Hybrid",
-        "basePrice":"29350",
-        "powertrain":"HEV",
-        "engine":{
-            "engineSpec1":"1.8 Litre 4-cylinder DOHC 16-Valve with Variable Valve Timing with Intelligence",
-            "engineSpec2":"Permanent Magnet Synchronous Electric Motor",
-            "engineSpec3":"Sequential multi-point EFI with Electronic Throttle Control System with intelligence"
-        },
-        "drivetrain":"FWD",
-        "horsepower":"120",
-        "battery":{
-            "type":"207V Voltage Nickel-metal hydride",
-            "capacity":"0.7kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Regenerative braking",
-            "level1":"Not applicable",
-            "level2":"Not applicable",
-            "level3":"Not applicable"
-        },
-        "range":"955/0/955",
-        "efficiency":"4.4/4.6/4.5",
-        "airbags":"8",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid-related",
-            "battery":"120 months or 240000km Hybrid"
-        },
-        "image":"../public/images/toyota-2022-prius.jpg"
-
+  {
+    "id": "1",
+    "dealerId": "a",
+    "make": "Toyota",
+    "model": "Prius",
+    "trim": "Hybrid",
+    "basePrice": "29350",
+    "powertrain": "HEV",
+    "engine": {
+      "engineSpec1": "1.8 Litre 4-cylinder DOHC 16-Valve with Variable Valve Timing with Intelligence",
+      "engineSpec2": "Permanent Magnet Synchronous Electric Motor",
+      "engineSpec3": "Sequential multi-point EFI with Electronic Throttle Control System with intelligence"
     },
-    {
-        "id":"2",
-        "dealerId":"a",
-        "make":"Toyota",
-        "model":"Corolla",
-        "trim":"Hybrid",
-        "basePrice":"25250",
-        "powertrain":"HEV",
-        "engine":{
-            "engineSpec1":"1.8 Litre 4-cylinder DOHC 16-Valve with Dual Variable Valve Timing with intelligence",
-            "engineSpec2":"Hybrid Synergy Drive",
-            "engineSpec3":""
-        },
-        "drivetrain":"FWD",
-        "horsepower":"121",
-        "battery":{
-            "type":"202V Voltage Nickel-metal hydride",
-            "capacity":"1.3kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Regenerative braking",
-            "level1":"Not applicable",
-            "level2":"Not applicable",
-            "level3":"Not applicable"
-        },
-        "range":"955/0/955",
-        "efficiency":"4.4/4.5/4.5",
-        "airbags":"10",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid-related",
-            "battery":"120 months or 240000km Hybrid"
-        }
-
+    "drivetrain": "FWD",
+    "horsepower": "120",
+    "battery": {
+      "type": "207V Voltage Nickel-metal hydride",
+      "capacity": "0.7kWh energy"
     },
-    {
-        "id":"3",
-        "dealerId":"a",
-        "make":"Toyota",
-        "model":"Rav4",
-        "trim":"Hybrid XSE",
-        "basePrice":"33190",
-        "powertrain":"HEV",
-        "engine":{
-            "engineSpec1":"2.5 Litre, 4-Cylinder, DOHC, Dual Variable Valve Timing with Intelligence",
-            "engineSpec2":"Hybrid Synergy Drive",
-            "engineSpec3":""
-        },
-        "drivetrain":"AWD",
-        "horsepower":"219",
-        "battery":{
-            "type":"245V Voltage Nickel-metal hydride",
-            "capacity":"1.6kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Regenerative braking",
-            "level1":"Not applicable",
-            "level2":"Not applicable",
-            "level3":"Not applicable"
-        },
-        "range":"916/0/916",
-        "efficiency":"5.8/6.3/6.0",
-        "airbags":"8",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid-related",
-            "battery":"120 months or 240000km Hybrid"
-        }
-
+    "chargeTime": {
+      "mechanism": "Regenerative braking",
+      "level1": "Not applicable",
+      "level2": "Not applicable",
+      "level3": "Not applicable"
     },
-    {
-        "id":"4",
-        "dealerId":"a",
-        "make":"Toyota",
-        "model":"Highlander",
-        "trim":"Hybrid LE",
-        "basePrice":"46750",
-        "powertrain":"HEV",
-        "engine":{
-            "engineSpec1":"2.5 Litre, 4-Cylinder, DOHC, Dual Variable Valve Timing with Intelligence",
-            "engineSpec2":"Hybrid Synergy Drive",
-            "engineSpec3":""
-        },
-        "drivetrain":"AWD",
-        "horsepower":"243",
-        "battery":{
-            "type":"288V Voltage Nickel-metal hydride",
-            "capacity":"1.9kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Regenerative braking",
-            "level1":"Not applicable",
-            "level2":"Not applicable",
-            "level3":"Not applicable"
-        },
-        "range":"970/0/970",
-        "efficiency":"6.7/6.8/6.7",
-        "airbags":"8",
-        "seats":"8",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid-related",
-            "battery":"120 months or 240000km Hybrid"
-        }
-
+    "range": "955/0/955",
+    "efficiency": "4.4/4.6/4.5",
+    "airbags": "8",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid-related",
+      "battery": "120 months or 240000km Hybrid"
     },
-    {
-        "id":"5",
-        "dealerId":"a",
-        "make":"Toyota",
-        "model":"Prius",
-        "trim":"Prime",
-        "basePrice":"33750",
-        "powertrain":"PHEV",
-        "engine":{
-            "engineSpec1":"1.8 Litre 4-cylinder DOHC 16-Valve with Variable Valve Timing with Intelligence",
-            "engineSpec2":"Permanent Magnet Synchronous Electric Motor",
-            "engineSpec3":"Sequential multi-point EFI with Electronic Throttle Control System with intelligence"
-        },
-        "drivetrain":"FWD",
-        "horsepower":"121",
-        "battery":{
-            "type":"352 V Voltage Lithium-ion Traction Battery",
-            "capacity":"8.8kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Regenerative braking and plug-in",
-            "level1":"5.5h",
-            "level2":"2h",
-            "level3":"Not applicable"
-        },
-        "range":"995/40/1035",
-        "efficiency":"4.3/4.4/4.3/1.8",
-        "airbags":"8",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid-related",
-            "battery":"120 months or 240000km Hybrid"
-        }
+    "image": "/images/toyota-2022-prius.jpg"
 
+  },
+  {
+    "id": "2",
+    "dealerId": "a",
+    "make": "Toyota",
+    "model": "Corolla",
+    "trim": "Hybrid",
+    "basePrice": "25250",
+    "powertrain": "HEV",
+    "engine": {
+      "engineSpec1": "1.8 Litre 4-cylinder DOHC 16-Valve with Dual Variable Valve Timing with intelligence",
+      "engineSpec2": "Hybrid Synergy Drive",
+      "engineSpec3": ""
     },
-    {
-        "id":"6",
-        "dealerId":"a",
-        "make":"Toyota",
-        "model":"Rav4",
-        "trim":"Prime",
-        "basePrice":"44990",
-        "powertrain":"PHEV",
-        "engine":{
-            "engineSpec1":"2.5 Litre, 4-Cylinder, DOHC, Dual Variable Valve Timing with Intelligence",
-            "engineSpec2":" Hybrid Synergy Drive",
-            "engineSpec3":""
-        },
-        "drivetrain":"AWD",
-        "horsepower":"302",
-        "battery":{
-            "type":"355 V Voltage Lithium-ion",
-            "capacity":"18.1kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Regenerative braking and plug-in",
-            "level1":"12h",
-            "level2":"4.5h",
-            "level3":"Not applicable"
-        },
-        "range":"911/68/979",
-        "efficiency":"5.7/6.4/6.0/2.5",
-        "airbags":"8",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid-related",
-            "battery":"120 months or 240000km Hybrid"
-        }
-
+    "drivetrain": "FWD",
+    "horsepower": "121",
+    "battery": {
+      "type": "202V Voltage Nickel-metal hydride",
+      "capacity": "1.3kWh energy"
     },
-    {
-        "id":"7",
-        "dealerId":"a",
-        "make":"Toyota",
-        "model":"Mirai",
-        "trim":"XLE",
-        "basePrice":"54990",
-        "powertrain":"FCEV",
-        "engine":{
-            "engineSpec1":"Toyota Fuel Cell Stack",
-            "engineSpec2":"",
-            "engineSpec3":""
-        },
-        "drivetrain":"RWD",
-        "horsepower":"182",
-        "battery":{
-            "type":"311 V Voltage Lithium-ion",
-            "capacity":"1.2kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Plug-in",
-            "level1":"0.08h",
-            "level2":"Not applicable",
-            "level3":"Not applicable"
-        },
-        "range":"0/647/647",
-        "efficiency":"3.1/3.3/3.2/3.2",
-        "airbags":"8",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Fuel Cell Electric Vehicle",
-            "battery":"120 months or 240000km Electric vehicle"
-        }
-
+    "chargeTime": {
+      "mechanism": "Regenerative braking",
+      "level1": "Not applicable",
+      "level2": "Not applicable",
+      "level3": "Not applicable"
     },
-    {
-        "id":"8",
-        "dealerId":"b",
-        "make":"Honda",
-        "model":"Accord",
-        "trim":"Hybrid",
-        "basePrice":"37170",
-        "powertrain":"HEV",
-        "engine":{
-            "engineSpec1":"2.0-litre, 16-valve, Atkinson cycle DOHC, i-VTEC 4-cylinder",
-            "engineSpec2":"",
-            "engineSpec3":""
-        },
-        "drivetrain":"FWD",
-        "horsepower":"212",
-        "battery":{
-            "type":"259 V Voltage Lithium-ion",
-            "capacity":"1.3kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Regenerative driving and braking",
-            "level1":"Not applicable",
-            "level2":"Not applicable",
-            "level3":"Not applicable"
-        },
-        "range":"980/0/980",
-        "efficiency":"5.0/5.0/5.0",
-        "airbags":"8",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid system",
-            "battery":"36 months no distance limit"
-        }
-
+    "range": "955/0/955",
+    "efficiency": "4.4/4.5/4.5",
+    "airbags": "10",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid-related",
+      "battery": "120 months or 240000km Hybrid"
     },
-    {
-        "id":"9",
-        "dealerId":"c",
-        "make":"Nissan",
-        "model":"Leaf",
-        "trim":"SV",
-        "basePrice":"37498",
-        "powertrain":"BEV",
-        "engine":{
-            "engineSpec1":"110 kW AC synchronous electric motor",
-            "engineSpec2":"",
-            "engineSpec3":""
-        },
-        "drivetrain":"FWD",
-        "horsepower":"147",
-        "battery":{
-            "type":"Lithium-ion",
-            "capacity":"40kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Plug-in",
-            "level1":"35h",
-            "level2":"8h",
-            "level3":"0.7h"
-        },
-        "range":"0/240/240",
-        "efficiency":"1.9/2.4/2.1/2.1",
-        "airbags":"8",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"",
-            "battery":"96 months or 160000km"
-        }
-
+    "image": "/images/toyota-2022-corolla.jpg"
+  },
+  {
+    "id": "3",
+    "dealerId": "a",
+    "make": "Toyota",
+    "model": "Rav4",
+    "trim": "Hybrid XSE",
+    "basePrice": "33190",
+    "powertrain": "HEV",
+    "engine": {
+      "engineSpec1": "2.5 Litre, 4-Cylinder, DOHC, Dual Variable Valve Timing with Intelligence",
+      "engineSpec2": "Hybrid Synergy Drive",
+      "engineSpec3": ""
     },
-    {
-        "id":"10",
-        "dealerId":"d",
-        "make":"Mitsubishi",
-        "model":"Outlander",
-        "trim":"SE S-AWC",
-        "basePrice":"44198",
-        "powertrain":"PHEV",
-        "engine":{
-            "engineSpec1":"2.4L DOHC MIVEC 4‑cylinder engine",
-            "engineSpec2":"PHEV twin motor system",
-            "engineSpec3":"Sequential multi-point EFI with Electronic Throttle Control System with intelligence"
-        },
-        "drivetrain":"AWC",
-        "horsepower":"221",
-        "battery":{
-            "type":"300 V Voltage Lithium-ion",
-            "capacity":"13.8kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Plug-in",
-            "level1":"14.5h",
-            "level2":"4h",
-            "level3":"0.4h"
-        },
-        "range":"470/39/509",
-        "efficiency":"9.2/9.0/9.1/3.2",
-        "airbags":"7",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"",
-            "battery":"96 months or 160000km"
-        }
-
+    "drivetrain": "AWD",
+    "horsepower": "219",
+    "battery": {
+      "type": "245V Voltage Nickel-metal hydride",
+      "capacity": "1.6kWh energy"
     },
-    {
-        "id":"11",
-        "dealerId":"e",
-        "make":"Hyundai",
-        "model":"Kona",
-        "trim":"Preferred",
-        "basePrice":"45851",
-        "powertrain":"BEV",
-        "engine":{
-            "engineSpec1":"Interior permanent magnet synchronous electric motor",
-            "engineSpec2":"",
-            "engineSpec3":""
-        },
-        "drivetrain":"FWD",
-        "horsepower":"201",
-        "battery":{
-            "type":"356 V Voltage Lithium-ion Polymer",
-            "capacity":"64kWh energy"
-        },
-        "chargeTime":{
-            "mechanism":"Plug-in",
-            "level1":"Not Applicable",
-            "level2":"9.2hh",
-            "level3":"0.8h"
-        },
-        "range":"0/415/415",
-        "efficiency":"1.8/2.2/2.0/2.0",
-        "airbags":"6",
-        "seats":"5",
-        "electricWarranty": {
-            "components":"96 months or 160000km Hybrid and Plug-in",
-            "battery":""
-        }
-
-    }
+    "chargeTime": {
+      "mechanism": "Regenerative braking",
+      "level1": "Not applicable",
+      "level2": "Not applicable",
+      "level3": "Not applicable"
+    },
+    "range": "916/0/916",
+    "efficiency": "5.8/6.3/6.0",
+    "airbags": "8",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid-related",
+      "battery": "120 months or 240000km Hybrid"
+    },
+    "image": "/images/toyota-2022-rav4-xse.jpg"
+  },
+  {
+    "id": "4",
+    "dealerId": "a",
+    "make": "Toyota",
+    "model": "Highlander",
+    "trim": "Hybrid LE",
+    "basePrice": "46750",
+    "powertrain": "HEV",
+    "engine": {
+      "engineSpec1": "2.5 Litre, 4-Cylinder, DOHC, Dual Variable Valve Timing with Intelligence",
+      "engineSpec2": "Hybrid Synergy Drive",
+      "engineSpec3": ""
+    },
+    "drivetrain": "AWD",
+    "horsepower": "243",
+    "battery": {
+      "type": "288V Voltage Nickel-metal hydride",
+      "capacity": "1.9kWh energy"
+    },
+    "chargeTime": {
+      "mechanism": "Regenerative braking",
+      "level1": "Not applicable",
+      "level2": "Not applicable",
+      "level3": "Not applicable"
+    },
+    "range": "970/0/970",
+    "efficiency": "6.7/6.8/6.7",
+    "airbags": "8",
+    "seats": "8",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid-related",
+      "battery": "120 months or 240000km Hybrid"
+    },
+    "image": "/images/toyota-2022-highlander.jpg"
+  },
+  {
+    "id": "5",
+    "dealerId": "a",
+    "make": "Toyota",
+    "model": "Prius",
+    "trim": "Prime",
+    "basePrice": "33750",
+    "powertrain": "PHEV",
+    "engine": {
+      "engineSpec1": "1.8 Litre 4-cylinder DOHC 16-Valve with Variable Valve Timing with Intelligence",
+      "engineSpec2": "Permanent Magnet Synchronous Electric Motor",
+      "engineSpec3": "Sequential multi-point EFI with Electronic Throttle Control System with intelligence"
+    },
+    "drivetrain": "FWD",
+    "horsepower": "121",
+    "battery": {
+      "type": "352 V Voltage Lithium-ion Traction Battery",
+      "capacity": "8.8kWh energy"
+    },
+    "chargeTime": {
+      "mechanism": "Regenerative braking and plug-in",
+      "level1": "5.5h",
+      "level2": "2h",
+      "level3": "Not applicable"
+    },
+    "range": "995/40/1035",
+    "efficiency": "4.3/4.4/4.3/1.8",
+    "airbags": "8",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid-related",
+      "battery": "120 months or 240000km Hybrid"
+    },
+    "image": "/images/toyota-2022-prius-prime.jpg"
+  },
+  {
+    "id": "6",
+    "dealerId": "a",
+    "make": "Toyota",
+    "model": "Rav4",
+    "trim": "Prime",
+    "basePrice": "44990",
+    "powertrain": "PHEV",
+    "engine": {
+      "engineSpec1": "2.5 Litre, 4-Cylinder, DOHC, Dual Variable Valve Timing with Intelligence",
+      "engineSpec2": " Hybrid Synergy Drive",
+      "engineSpec3": ""
+    },
+    "drivetrain": "AWD",
+    "horsepower": "302",
+    "battery": {
+      "type": "355 V Voltage Lithium-ion",
+      "capacity": "18.1kWh energy"
+    },
+    "chargeTime": {
+      "mechanism": "Regenerative braking and plug-in",
+      "level1": "12h",
+      "level2": "4.5h",
+      "level3": "Not applicable"
+    },
+    "range": "911/68/979",
+    "efficiency": "5.7/6.4/6.0/2.5",
+    "airbags": "8",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid-related",
+      "battery": "120 months or 240000km Hybrid"
+    },
+    "image": "/images/toyota-2022-rav4-prime.jpg"
+  },
+  {
+    "id": "7",
+    "dealerId": "a",
+    "make": "Toyota",
+    "model": "Mirai",
+    "trim": "XLE",
+    "basePrice": "54990",
+    "powertrain": "FCEV",
+    "engine": {
+      "engineSpec1": "Toyota Fuel Cell Stack",
+      "engineSpec2": "",
+      "engineSpec3": ""
+    },
+    "drivetrain": "RWD",
+    "horsepower": "182",
+    "battery": {
+      "type": "311 V Voltage Lithium-ion",
+      "capacity": "1.2kWh energy"
+    },
+    "chargeTime": {
+      "mechanism": "Plug-in",
+      "level1": "0.08h",
+      "level2": "Not applicable",
+      "level3": "Not applicable"
+    },
+    "range": "0/647/647",
+    "efficiency": "3.1/3.3/3.2/3.2",
+    "airbags": "8",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Fuel Cell Electric Vehicle",
+      "battery": "120 months or 240000km Electric vehicle"
+    },
+    "image": "/images/toyota-2022-mirai.jpg"
+  },
+  {
+    "id": "8",
+    "dealerId": "b",
+    "make": "Honda",
+    "model": "Accord",
+    "trim": "Hybrid",
+    "basePrice": "37170",
+    "powertrain": "HEV",
+    "engine": {
+      "engineSpec1": "2.0-litre, 16-valve, Atkinson cycle DOHC, i-VTEC 4-cylinder",
+      "engineSpec2": "",
+      "engineSpec3": ""
+    },
+    "drivetrain": "FWD",
+    "horsepower": "212",
+    "battery": {
+      "type": "259 V Voltage Lithium-ion",
+      "capacity": "1.3kWh energy"
+    },
+    "chargeTime": {
+      "mechanism": "Regenerative driving and braking",
+      "level1": "Not applicable",
+      "level2": "Not applicable",
+      "level3": "Not applicable"
+    },
+    "range": "980/0/980",
+    "efficiency": "5.0/5.0/5.0",
+    "airbags": "8",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid system",
+      "battery": "36 months no distance limit"
+    },
+    "image": "/images/honda-accord-hybrid.jpg"
+  },
+  {
+    "id": "9",
+    "dealerId": "c",
+    "make": "Nissan",
+    "model": "Leaf",
+    "trim": "SV",
+    "basePrice": "37498",
+    "powertrain": "BEV",
+    "engine": {
+      "engineSpec1": "110 kW AC synchronous electric motor",
+      "engineSpec2": "",
+      "engineSpec3": ""
+    },
+    "drivetrain": "FWD",
+    "horsepower": "147",
+    "battery": { "type": "Lithium-ion", "capacity": "40kWh energy" },
+    "chargeTime": {
+      "mechanism": "Plug-in",
+      "level1": "35h",
+      "level2": "8h",
+      "level3": "0.7h"
+    },
+    "range": "0/240/240",
+    "efficiency": "1.9/2.4/2.1/2.1",
+    "airbags": "8",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "",
+      "battery": "96 months or 160000km"
+    },
+    "image": "/images/nissan-leaf-sv-2022.jpg"
+  },
+  {
+    "id": "10",
+    "dealerId": "d",
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "trim": "SE S-AWC",
+    "basePrice": "44198",
+    "powertrain": "PHEV",
+    "engine": {
+      "engineSpec1": "2.4L DOHC MIVEC 4‑cylinder engine",
+      "engineSpec2": "PHEV twin motor system",
+      "engineSpec3": "Sequential multi-point EFI with Electronic Throttle Control System with intelligence"
+    },
+    "drivetrain": "AWC",
+    "horsepower": "221",
+    "battery": {
+      "type": "300 V Voltage Lithium-ion",
+      "capacity": "13.8kWh energy"
+    },
+    "chargeTime": {
+      "mechanism": "Plug-in",
+      "level1": "14.5h",
+      "level2": "4h",
+      "level3": "0.4h"
+    },
+    "range": "470/39/509",
+    "efficiency": "9.2/9.0/9.1/3.2",
+    "airbags": "7",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "",
+      "battery": "96 months or 160000km"
+    },
+    "image": "/images/2022-mitsubishi-outlander-phev.jpg"
+  },
+  {
+    "id": "11",
+    "dealerId": "e",
+    "make": "Hyundai",
+    "model": "Kona",
+    "trim": "Preferred",
+    "basePrice": "45851",
+    "powertrain": "BEV",
+    "engine": {
+      "engineSpec1": "Interior permanent magnet synchronous electric motor",
+      "engineSpec2": "",
+      "engineSpec3": ""
+    },
+    "drivetrain": "FWD",
+    "horsepower": "201",
+    "battery": {
+      "type": "356 V Voltage Lithium-ion Polymer",
+      "capacity": "64kWh energy"
+    },
+    "chargeTime": {
+      "mechanism": "Plug-in",
+      "level1": "Not Applicable",
+      "level2": "9.2hh",
+      "level3": "0.8h"
+    },
+    "range": "0/415/415",
+    "efficiency": "1.8/2.2/2.0/2.0",
+    "airbags": "6",
+    "seats": "5",
+    "electricWarranty": {
+      "components": "96 months or 160000km Hybrid and Plug-in",
+      "battery": ""
+    },
+    "image": "/images/2022-kona-electric.jpg"
+  }
 ]
