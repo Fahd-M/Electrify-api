@@ -59,24 +59,6 @@ router.delete("/:id", (req,res)=>{
             res.json(updatedVehiclesData)
           }
         );
-  
-        // fs.readFile("./data/dealerships.json", "utf8", (_err, _data) => {
-        //   if (_err) {
-        //     res.status(500).send("Internal server Error");
-        //   } else {
-        //     const dealershipData = JSON.parse(_data);
-        //     const updatedDealershipData = dealershipData.filter((dealership) => {
-        //       return dealership.make !== req.params.id;
-        //     });
-        //     fs.writeFile(
-        //       "./data/inventories.json",
-        //       JSON.stringify(updatedInventoryData),
-        //       () => {
-        //         res.json(updatedWarehouseData);
-        //       }
-        //     );
-        //   }
-        // });
       }
     });
   });
