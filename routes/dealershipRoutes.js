@@ -25,4 +25,17 @@ const fs = require("fs");
     });
   });
 
+//Route to GET collection of dealerships as array of object
+router.get("/", (req, res) => {
+  fs.readFile("./data/dealerships.json", "utf8", (err, data) => {
+    const dealershipsData = JSON.parse(data);
+    if (err) {
+      res.status(400).send("Error reading file");
+    } else {
+      res.json(dealershipsData);
+    }
+  });
+});
+
+
   module.exports = router

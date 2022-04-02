@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
-//const { v4: uuidv4 } = require("uuid");
+const { v4: uuidv4 } = require("uuid");
 
 // get collection of vehicles
 router.get("/", (req, res) => {
@@ -62,5 +62,76 @@ router.delete("/:id", (req,res)=>{
       }
     });
   });
+
+
+  
+router.post("/", (req, res) => {
+  const newVehicle = {
+    id: uuidv4(),
+    // dealerId:req.body.dealership.make, 
+    make: req.body.make,
+    model: req.body.model,
+    trim: req.body.trim,
+    basePrice: req.body.basePrice,
+    powertrain:req.body.powertrain,
+
+    engine: {
+      engineSpec1: req.body.engineSpec1,
+      engineSpec2: req.body.engineSpec2,
+      engineSpec3: req.body.engineSpec3,
+    },
+
+      
+    drivetrain: req.body.drivetrain,
+    horsepower: req.body.horsepower,
+    battery: {
+      type: req.body.batteryType,
+      capacity: req.body.batteryCapacity,
+    },
+
+    chargeTime: {
+      mechanism: req.body.chargeTimeMech,
+      level1: req.body.chargeTimeL1,
+      level2: req.body.chargeTimeL2,
+      level3: req.body.chargeTimeL3,
+    },
+
+    range: req.body.range,
+    efficiency:req.body.efficiency,
+
+    airbags: req.body.airbags,
+    seats: req.body.seats,
+    trim: req.body.trim,
+    basePrice: req.body.basePrice,
+    efficiency:req.body.powertrain,
+
+    electricWarranty: {
+      components: req.body.electricWarrantyComponents,
+      battery: req.body.electricWarrantyBattery,
+    },
+
+    // contact: {
+    //   name: req.body.name,
+    //   address: req.body.address,
+    //   phone: req.body.phone,
+    //   email: req.body.email,
+    // },
+  };
+  fs.readFile("./data/vehicles.json", "utf8", (err, data) => {
+    if (err) {
+      res.status(400).send("Internal server error");
+    } else {
+      const vehiclesData = JSON.parse(data);
+      vehiclesData.unshift(newVehicle);
+      fs.writeFile(
+        "./data/vehicles.json",
+        JSON.stringify(vehiclesData),
+        () => {
+          res.send("Vehicle has been added");
+        }
+      );
+    }
+  });
+});
 
   module.exports = router
