@@ -134,4 +134,56 @@ router.post("/", (req, res) => {
   });
 });
 
+
+router.put("/:id", (req, res) => {
+  fs.readFile("./data/vehicles.json", "utf8", (err, data) => {
+    if (err) {
+      res.status(400).send("Internal Server Error");
+    } else {
+      const vData = JSON.parse(data);
+      const id = vData.findIndex((vehicle) => {
+        return vehicle.id === req.params.id;
+      });
+      if (id >= 0) {
+        vData[id]["make"] = req.body.make;
+        vData[id]["model"] = req.body.model;
+        vData[id]["trim"] = req.body.trim;
+        vData[id]["basePrice"] = req.body.basePrice;
+
+        vData[id]["powertrain"] = req.body.powertrain;
+        vData[id]["engine"]["engineSpec1"] = req.body.engineSpec1;
+        vData[id]["engine"]["engineSpec2"] = req.body.engineSpec2;
+        vData[id]["engine"]["engineSpec3"] = req.body.engineSpec3;
+
+        vData[id]["drivetrain"] = req.body.drivetrain;
+        vData[id]["horsepower"] = req.body.horsepower;
+        vData[id]["battery"]["type"] = req.body.batteryType;
+        vData[id]["battery"]["capacity"] = req.body.batteryCapacity;
+        vData[id]["chargeTime"]["mechanism"] = req.body.chargeTimeMech;
+        vData[id]["chargeTime"]["level1"] = req.body.chargeTimeL1;
+        vData[id]["chargeTime"]["level2"] = req.body.chargeTimeL2;
+        vData[id]["chargeTime"]["level3"] = req.body.chargeTimeL3;
+
+        vData[id]["range"] = req.body.range;
+        vData[id]["efficiency"] = req.body.efficiency;
+        vData[id]["airbags"] = req.body.airbags;
+
+        vData[id]["seats"] = req.body.seats;
+        vData[id]["electricWarranty"]["components"] = req.body.electricWarrantyComponents;
+        vData[id]["electricWarranty"]["battery"] = req.body.electricWarrantyBattery;
+        fs.writeFile(
+          "./data/vehicles.json",
+          JSON.stringify(vData),
+          () => {
+            res.send("Vehicle has been updated");
+          }
+        );
+      } else {
+        res.status(404).send("This vehicle does not exist in the database")
+      }
+
+    }
+  });
+});
+
   module.exports = router
