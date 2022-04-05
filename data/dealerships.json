@@ -22,7 +22,8 @@
             "postalCode":"L5L1X3"
         },
         "phone":"1-888-360-3809",
-        "email":"info@mississaugahonda.com"
+        "email":"info@mississaugahonda.com",
+        "image":"/images/hondaDealershipMap.JPG"
     },
     {
         "id": "c",
@@ -34,7 +35,8 @@
             "postalCode":"L4W4N3"
         },
         "phone":"1-833-944-0869",
-        "email":"shoponline@dilawri.ca"
+        "email":"shoponline@dilawri.ca",
+        "image":"/images/nissanDealershipMap.JPG"
     },
     {
         "id": "d",
@@ -46,7 +48,8 @@
             "postalCode":"L4W3Z1"
         },
         "phone":"1-833-340-1889",
-        "email":"info@dixiemitsubishi.ca"
+        "email":"info@dixiemitsubishi.ca",
+        "image":"/images/mitsubishiDealershipMap.JPG"
     },
     {
         "id": "e",
@@ -58,6 +61,7 @@
             "postalCode":"L5L1J3"
         },
         "phone":"1-888-697-7020",
-        "email":"sales@mississaugahyundai.ca"
+        "email":"sales@mississaugahyundai.ca",
+        "image":"/images/hyundaiDealershipMap.JPG"
     }
 ]

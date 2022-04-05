@@ -2,7 +2,20 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
+const path = require('path');
+const multer = require('multer');
 
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public/uploadedPhotos')
+  },
+  filename: (req, file, cb) => {
+      //console.log(file)
+    cb(null, Date.now() + 'test')
+  }
+})
+
+const upload = multer({ storage: storage }).single('file')
 // get collection of vehicles
 router.get("/", (req, res) => {
     fs.readFile("./data/vehicles.json", "utf-8", (err, data) => {
@@ -63,76 +76,78 @@ router.delete("/:id", (req,res)=>{
     });
   });
 
+  router.post("/", (req, res) => {
+    upload(req, res, (err) => {
+      //console.log(req.file);
+      //console.log(req.body);
+      //console.log(JSON.parse(req.body.NewVehicle));
+      req.body.NewVehicle = JSON.parse(req.body.NewVehicle);
+      const fileName = req.file.filename
+      const newVehicle = {
+       
+        id: uuidv4(),
+        dealerId:req.body.NewVehicle.dealerId,
+        // dealerId:req.body.dealership.make,
+        make: req.body.NewVehicle.make,
+        model: req.body.NewVehicle.model,
+        trim: req.body.NewVehicle.trim,
+        basePrice: req.body.NewVehicle.basePrice,
+        powertrain: req.body.NewVehicle.powertrain,
 
-  
-router.post("/", (req, res) => {
-  const newVehicle = {
-    id: uuidv4(),
-    // dealerId:req.body.dealership.make, 
-    make: req.body.make,
-    model: req.body.model,
-    trim: req.body.trim,
-    basePrice: req.body.basePrice,
-    powertrain:req.body.powertrain,
+        engine: {
+          engineSpec1: req.body.NewVehicle.engineSpec1,
+          engineSpec2: req.body.NewVehicle.engineSpec2,
+          engineSpec3: req.body.NewVehicle.engineSpec3,
+        },
 
-    engine: {
-      engineSpec1: req.body.engineSpec1,
-      engineSpec2: req.body.engineSpec2,
-      engineSpec3: req.body.engineSpec3,
-    },
+        drivetrain: req.body.NewVehicle.drivetrain,
+        horsepower: req.body.NewVehicle.horsepower,
+        battery: {
+          type: req.body.NewVehicle.batteryType,
+          capacity: req.body.NewVehicle.batteryCapacity,
+        },
 
-      
-    drivetrain: req.body.drivetrain,
-    horsepower: req.body.horsepower,
-    battery: {
-      type: req.body.batteryType,
-      capacity: req.body.batteryCapacity,
-    },
+        chargeTime: {
+          mechanism: req.body.NewVehicle.chargeTimeMech,
+          level1: req.body.NewVehicle.chargeTimeL1,
+          level2: req.body.NewVehicle.chargeTimeL2,
+          level3: req.body.NewVehicle.chargeTimeL3,
+        },
 
-    chargeTime: {
-      mechanism: req.body.chargeTimeMech,
-      level1: req.body.chargeTimeL1,
-      level2: req.body.chargeTimeL2,
-      level3: req.body.chargeTimeL3,
-    },
+        range: req.body.NewVehicle.range,
+        efficiency: req.body.NewVehicle.efficiency,
 
-    range: req.body.range,
-    efficiency:req.body.efficiency,
+        airbags: req.body.NewVehicle.airbags,
+        seats: req.body.NewVehicle.seats,
+        trim: req.body.NewVehicle.trim,
+        basePrice: req.body.NewVehicle.basePrice,
+        efficiency: req.body.NewVehicle.powertrain,
 
-    airbags: req.body.airbags,
-    seats: req.body.seats,
-    trim: req.body.trim,
-    basePrice: req.body.basePrice,
-    efficiency:req.body.powertrain,
-
-    electricWarranty: {
-      components: req.body.electricWarrantyComponents,
-      battery: req.body.electricWarrantyBattery,
-    },
-
-    // contact: {
-    //   name: req.body.name,
-    //   address: req.body.address,
-    //   phone: req.body.phone,
-    //   email: req.body.email,
-    // },
-  };
-  fs.readFile("./data/vehicles.json", "utf8", (err, data) => {
-    if (err) {
-      res.status(400).send("Internal server error");
-    } else {
-      const vehiclesData = JSON.parse(data);
-      vehiclesData.unshift(newVehicle);
-      fs.writeFile(
-        "./data/vehicles.json",
-        JSON.stringify(vehiclesData),
-        () => {
-          res.send("Vehicle has been added");
+        electricWarranty: {
+          components: req.body.NewVehicle.electricWarrantyComponents,
+          battery: req.body.NewVehicle.electricWarrantyBattery,
+        },
+        image: `/uploadedPhotos/${fileName}`,
+      };
+      fs.readFile("./data/vehicles.json", "utf8", (err, data) => {
+        if (err) {
+          res.status(400).send("Internal server error");
+        } else {
+          const vehiclesData = JSON.parse(data);
+          vehiclesData.unshift(newVehicle);
+          fs.writeFile(
+            "./data/vehicles.json",
+            JSON.stringify(vehiclesData),
+            () => {
+              res.send("Vehicle has been added");
+            }
+          );
         }
-      );
-    }
+      });
+    });
   });
-});
+  
+
 
 
 router.put("/:id", (req, res) => {
@@ -185,5 +200,8 @@ router.put("/:id", (req, res) => {
     }
   });
 });
+
+
+
 
   module.exports = router
