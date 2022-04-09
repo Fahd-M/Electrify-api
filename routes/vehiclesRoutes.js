@@ -158,7 +158,9 @@ router.put("/:id", (req, res) => {
       const vData = JSON.parse(data);
       const id = vData.findIndex((vehicle) => {
         return vehicle.id === req.params.id;
+        
       });
+      console.log(req.body);
       if (id >= 0) {
         vData[id]["make"] = req.body.make;
         vData[id]["model"] = req.body.model;
